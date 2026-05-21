@@ -90,3 +90,8 @@ function st {
 }
 ```
 
+arch linux
+```bash
+sudo pacman -S qbittorrent
+```
+

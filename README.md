@@ -1,16 +1,29 @@
-### powershell
+# PowerShell
 
 ```
 # Delete .next / node_modules
 Remove-Item -Path ".\.next", ".\node_modules" -Recurse -Force
+
+
+# Scoop Installation
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+
+# Fuzzy
+scoop install fzf
+
+
 ```
 
 
 
-### $PROFILE
+#### PowerShell: $PROFILE
 
-##### notepad $PROFILE
+
 ```
+# Open profile
+notepad $PROFILE
+
 
 oh-my-posh init pwsh --config "$HOME\fish.omp.json" | Invoke-Expression
 
@@ -47,10 +60,15 @@ function st {
 }
 ```
 
-### Theme
-##### notepad $hOME\fish.omp.json
+#### PowerShell: Fish Theme
 
+```bash
+# Create file
+notepad $hOME\fish.omp.json
 ```
+
+###### $hOME\fish.omp.json
+```json
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
@@ -89,6 +107,7 @@ function st {
   ]
 }
 ```
+
 
 ## arch linux
 

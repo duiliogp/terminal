@@ -1,6 +1,6 @@
 # PowerShell
 
-```
+```bash
 # Delete .next / node_modules
 Remove-Item -Path ".\.next", ".\node_modules" -Recurse -Force
 
@@ -20,7 +20,7 @@ scoop install fzf
 #### PowerShell: $PROFILE
 
 
-```
+```bash
 # Open profile
 notepad $PROFILE
 

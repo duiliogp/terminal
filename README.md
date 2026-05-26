@@ -90,8 +90,47 @@ function st {
 }
 ```
 
-arch linux
+## arch linux
+
+### Essential
 ```bash
+# qBitTorrent
 sudo pacman -S qbittorrent
+```
+
+### Jellyfin
+
+```
+pamac build jellyfin 
+
+# Iniciar o serviço agora
+sudo systemctl start jellyfin
+
+# Habilitar para iniciar junto com o sistema
+sudo systemctl enable jellyfin
+```
+
+#### Acessar o Painel de Controle
+
+[localhost:8096](http://localhost:8096)
+
+
+
+
+
+
+
+
+
+### PostgresSQL
+```
+# Connection
+psql -h localhost -p 5432 -U postgres -d postgres
+
+# list all databases in the server
+\l
+
+# query the list of databases
+SELECT datname FROM pg_database;
 ```
 

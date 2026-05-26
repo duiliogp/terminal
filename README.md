@@ -67,46 +67,9 @@ function st {
 notepad $hOME\fish.omp.json
 ```
 
-###### $hOME\fish.omp.json
-```json
-{
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 2,
-  "blocks": [
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
-        {
-          "type": "path",
-          "style": "plain",
-          "foreground": "#61AFEF",
-          "properties": {
-            "style": "folder",
-            "max_depth": 1
-          }
-        },
-        {
-          "type": "git",
-          "style": "plain",
-          "foreground": "#98C379",
-          "template": "{{ .HEAD }}",
-          "properties": {
-            "branch_icon": "",
-            "fetch_status": false
-          }
-        },
-        {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "template": "\n ❯ "
-        }
-      ]
-    }
-  ]
-}
-```
+###### 
+
+[$hOME\fish.omp.json](fish.omp.json)
 
 
 ## arch linux

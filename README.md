@@ -12,6 +12,9 @@ irm get.scoop.sh | iex
 # Fuzzy
 scoop install fzf
 
+# Stop node
+taskkill /F /IM node.exe /T
+
 
 ```
 
